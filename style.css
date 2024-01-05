@@ -55,8 +55,8 @@ ul li::before {
 .one .box {
   display: flex;
   flex-direction: column;
-  gap: 19px;
-  max-width: 370px;
+  gap: 16px;
+  max-width: 362px;
   padding: 14px 14px 7px 14px;
   border-radius: 3px;
   border: 1px solid #d5dfe6;
@@ -115,7 +115,7 @@ ul li::before {
 .one .box .box__bottom {
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 4px;
 }
 
 .one .box .box__bottom ul {
@@ -161,6 +161,73 @@ ul li::before {
   color: #fff;
   font-family: "Inter Bold";
   font-size: 18px;
+  line-height: 1;
   cursor: pointer;
 }
 /* Two */
+.two .table {
+  width: 375px;
+  table-layout: auto;
+  border-collapse: collapse;
+  color: #2a2a2a;
+  font-size: 11px;
+  font-family: "Inter Bold";
+}
+
+.two .table th,
+.two .table td {
+  border: 1px solid #ccc;
+  line-height: 1;
+}
+
+.two .table th {
+  padding: 14px 10px;
+  background: #f6f6f6;
+  text-align: left;
+}
+
+.two .table tr > td:first-child {
+  padding: 9px 10px;
+  text-align: center;
+}
+
+.two .table tr > td:last-child {
+  padding: 10px;
+  color: #e12827;
+  font-size: 13px;
+  text-align: center;
+}
+
+.two .table tr > td:nth-child(2) {
+  width: 130px;
+  height: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+.two .table tr > td:nth-child(2) div {
+  height: 46px;
+}
+
+.two .table tr > td:nth-child(2) div img {
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
+}
+
+.two .table tr > td:nth-child(3) {
+  padding: 10px 4px 10px;
+  font-size: 8px;
+}
+
+.two .table tr > td ul li {
+  padding-left: 12px;
+  line-height: 1.2;
+}
+
+.two .table tr > td ul li::before {
+  top: 0;
+  transform: none;
+  width: 9px;
+  height: 6px;
+}
