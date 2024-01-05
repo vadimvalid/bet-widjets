@@ -1,0 +1,166 @@
+/* Fonts */
+@font-face {
+  font-family: "Inter Light";
+  src: url("./fonts/Inter-Light.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter Bold";
+  src: url("./fonts/Inter-Bold.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 700;
+}
+
+body {
+  font-family: "Inter";
+  font-size: 11px;
+  color: #0f2a39;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  position: relative;
+  padding-left: 19px;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 11px;
+  height: 8px;
+  background-image: url("./images/icon-list.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* One */
+.one .box {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  max-width: 370px;
+  padding: 14px 14px 7px 14px;
+  border-radius: 3px;
+  border: 1px solid #d5dfe6;
+  background: #fff;
+}
+
+.one .box .box__top {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.one .box .box__top .image {
+  flex: 0 1 62%;
+  width: 212px;
+  height: 60px;
+}
+
+.one .box .box__top .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.one .box .box__top .rating {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.one .box .box__top .rating__average {
+  align-self: center;
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  color: #9a9a9a;
+}
+
+.one .box .box__top .rating__average span {
+  font-family: "Inter Bold";
+  font-size: 18px;
+  line-height: 22px;
+  color: #141414;
+}
+
+.one .box .box__top .rating__stars {
+  display: flex;
+  gap: 3.5px;
+}
+
+.one .box .box__top .rating__count {
+  font-family: "Inter Light";
+  font-size: 13px;
+  color: #8e99b1;
+}
+
+.one .box .box__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.one .box .box__bottom ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 2px;
+}
+
+.one .box .box__bottom ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 2px;
+}
+
+.one .box .box__bottom p {
+  align-self: center;
+  color: #0f2a39;
+  font-family: "Inter Bold";
+  font-size: 17px;
+}
+
+.one .box .box__bottom p > span {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 2px 1px;
+  border-radius: 2px;
+  background: #e2fdef;
+  color: #2dc460;
+  font-size: 15px;
+}
+
+.one .box .box__bottom button {
+  display: flex;
+  padding: 11px 124px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  border: 1px solid #238d3a;
+  background: #61a15f;
+  color: #fff;
+  font-family: "Inter Bold";
+  font-size: 18px;
+  cursor: pointer;
+}
+/* Two */
